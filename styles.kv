@@ -1,0 +1,44 @@
+<Label>:
+    color: app.THEMES[app.theme]['text']
+
+<Button>:
+    color: app.THEMES[app.theme]['text']
+
+<BackButton@Button>:
+    text: 'Назад'
+    size_hint: (0.2, 0.1)
+    pos_hint: {'top': 1, 'left': 1}
+    font_size: 16
+    background_normal: ''
+    background_color: app.THEMES[app.theme]['button_bg']
+    canvas.before:
+        Color:
+            rgba: self.background_color
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [10]
+
+<DateTimeButton@Button>:
+    text: 'Выбрать'
+    size_hint: (0.3, 0.1)
+    font_size: 14
+    background_normal: ''
+    background_color: app.THEMES[app.theme]['button_bg']
+    canvas.before:
+        Color:
+            rgba: self.background_color
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [8]
+
+<ModalView>:
+    background_color: app.THEMES[app.theme]['modal_bg']
+    canvas.before:
+        Color:
+            rgba: self.background_color
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [15]

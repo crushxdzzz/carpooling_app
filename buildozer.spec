@@ -19,7 +19,7 @@ source.include_exts = py,png,jpg,kv,atlas
 #source.include_patterns = assets/*,images/*.png
 
 android.sdk = ~/.buildozer/android/platform/android-sdk
-android.ndk = ~/.buildozer/android/platform/android-ndk
+android.ndk = 25b
 
 # (list) Source files to exclude (let empty to not exclude anything)
 #source.exclude_exts = spec

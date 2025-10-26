@@ -18,8 +18,8 @@ source.include_exts = py,png,jpg,kv,atlas
 # (list) List of inclusions using pattern matching
 #source.include_patterns = assets/*,images/*.png
 
-# android.ndk_path = /home/vboxuser/.buildozer/android/platform/android-ndk-r25c
-# android.sdk_path = /home/vboxuser/.buildozer/android/platform/android-sdk
+android.sdk = ~/.buildozer/android/platform/android-sdk
+android.ndk = ~/.buildozer/android/platform/android-ndk
 
 # (list) Source files to exclude (let empty to not exclude anything)
 #source.exclude_exts = spec
